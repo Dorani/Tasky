@@ -1,9 +1,11 @@
-//add new Task
+//Add new Task
+  //When button is pressed
+  //Create a task
 
-//edit existing tasks
+//Edit existing tasks
 
-//delete an existing task
+//Delete an existing task
 
-//mark a task as completed-tasks
+//Mark a task as completed-tasks
 
-//mark a task as incomplete-tasks
+//Mark a task as incomplete-tasks
