@@ -1,9 +1,10 @@
 var taskInput = document.getElementById("new-task"); //new-task
-var addButton; //first-button
+var addButton = document.getElementsByTagName("button")[0]; //first-button
 var incompleteTaskHolder = document.getElementById("incomplete-tasks"); //imcomplete-tasks
 var completedTaskHolder = document.getElementById("completed-tasks"); //completed-tasks
 //Add new Task
-var addTask = funtion() {
+
+var addTask = function(){
   //When button is pressed
   //Create a new list item with the text from new-task:
   //input (checkbox)
