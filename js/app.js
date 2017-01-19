@@ -1,7 +1,9 @@
+var taskInput; //new-task
+var addButton; //first-button
+var incompleteTaskHolder; //imcomplete-tasks
+var completedTaskHolder; //completed-tasks
 //Add new Task
 var addTask = funtion() {
-
-
   //When button is pressed
   //Create a new list item with the text from new-task:
   //input (checkbox)
@@ -12,7 +14,6 @@ var addTask = funtion() {
   //each elements, needs to be modified and appended
 }
 //Edit existing tasks
-
 var editTask = function(){
   //When the Edit button is pressed
    //if the class of parent is edit mode
