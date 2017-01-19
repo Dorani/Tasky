@@ -45,3 +45,21 @@ var tastIncomplete = function(){
   console.log("Task Incomplete...");
   //when the checkbox is unchecked we want to append it to #incomplete-tasks
 }
+
+var bindTaskEvent = function(taskListItem, checkBoxEventHandler){
+//Set the click handler to the addTask function
+//select its children
+//bind editTask to edit button
+//bind deleteTask to delete button
+//bind taskCompleted to the checkbox
+}
+addButton.onclick = addTask();
+
+//cycle over incompleteTaskHolder ul list items
+  //for each list itemm
+  //bind events to list item's children(taskCompleted)
+
+
+//cycle over completedTaskHolder ul list items
+  //for each list itemm
+  //bind events to list item's children(taskIncomplete)
