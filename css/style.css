@@ -1,3 +1,4 @@
+
 /* Basic Style */
 body {
   background: #fff;
@@ -9,7 +10,6 @@ body {
   width: 400px;
   margin: 100px auto 0;
 }
-
 ul {
   margin: 0;
   padding: 0;
@@ -37,7 +37,6 @@ button {
 button:hover {
   color: #333;
 }
-
 /* Heading */
 h3,
 label[for='new-task'] {
