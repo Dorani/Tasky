@@ -56,7 +56,6 @@ var editButton = taskListItem.querySelector("input[type=edit]");
 var deleteButton = taskListItem.querySelector("input[type=delete]");
 //bind editTask to edit button
 editButton.onclick = editTask;
-
 //bind deleteTask to delete button
 deleteButton.onclick = deleteTask;
 //bind taskCompleted to the checkbox
