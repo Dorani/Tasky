@@ -5,8 +5,9 @@ var completedTaskHolder = document.getElementById("completed-tasks"); //complete
 
 //New Task List Item
 var createNewTaskElement = function(taskString){
-  var listItem = ???;
+  var listItem = document.createElement("li");
   //input (checkbox)
+  var checkbox = document.createElement("input")
   //label
   //input (text)
   //button.edit
