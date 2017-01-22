@@ -15,7 +15,7 @@ var createNewTaskElement = function(taskString){
   //button.edit
   var editButton = document.createElement("button");
   //button.delete
-  var delete = document.createElement("button");
+  var deleteButton = document.createElement("button");
   //each element needs to be modified
 
   //and appended
@@ -78,13 +78,13 @@ checkbox.onchange = checkBoxEventHandler;
 addButton.onclick = addTask();
 
 //cycle over incompleteTaskHolder ul list items
-for (var i = 0; i < imcompleteTaskHolder.children.length, i++){
+for (var i = 0; i < imcompleteTaskHolder.children.length; i++){
   //bind events to list item's children(taskCompleted)
   bindTaskEvents(incompleteTaskHolder.children[i], taskCompleted);
 }
 
 //cycle over completedTaskHolder ul list items
-for (var i = 0; i < completedTaskHolder.children.length, i++){
+for (var i = 0; i < completedTaskHolder.children.length; i++){
   //bind events to list item's children(taskCompleted)
   bindTaskEvents(completedTaskHolder.children[i], taskComplete);
 }
