@@ -5,20 +5,23 @@ var completedTaskHolder = document.getElementById("completed-tasks"); //complete
 
 //New Task List Item
 var createNewTaskElement = function(taskString){
-
-}
-
-//Add new Task
-var addTask = function(){
-  console.log("Add Task...");
-  //Create a new list item with the text from new-task:
-  createNewTaskElement("Some New Task");
+  var listItem = ???;
   //input (checkbox)
   //label
   //input (text)
   //button.edit
   //button.delete
   //each elements, needs to be modified and appended
+  return listItem;
+}
+
+//Add new Task
+var addTask = function(){
+  console.log("Add Task...");
+  //Create a new list item with the text from new-task:
+  var listItem = createNewTaskElement("Some New Task");
+  //append listItem to imcompleteTaskHolder
+
 }
 //Edit existing tasks
 
