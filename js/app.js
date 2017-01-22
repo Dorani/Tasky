@@ -7,12 +7,18 @@ var completedTaskHolder = document.getElementById("completed-tasks"); //complete
 var createNewTaskElement = function(taskString){
   var listItem = document.createElement("li");
   //input (checkbox)
-  var checkbox = document.createElement("input")
+  var checkbox = document.createElement("input");
   //label
+  var label = document.createElement("label");
   //input (text)
+  var editInput = document.createElement("input");
   //button.edit
+  var editButton = document.createElement("button");
   //button.delete
-  //each elements, needs to be modified and appended
+  var delete = document.createElement("button");
+  //each element needs to be modified
+
+  //and appended
   return listItem;
 }
 
