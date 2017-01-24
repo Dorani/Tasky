@@ -44,7 +44,7 @@ var createNewTaskElement = function(taskString){
 var addTask = function(){
   console.log("Add Task...");
   //Create a new list item with the text from new-task:
-  var listItem = createNewTaskElement("Some New Task");
+  var listItem = createNewTaskElement(taskInput.value);
   //append listItem to imcompleteTaskHolder
   incompleteTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskCompleted);
