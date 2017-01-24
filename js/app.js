@@ -32,7 +32,7 @@ var addTask = function(){
   //Create a new list item with the text from new-task:
   var listItem = createNewTaskElement("Some New Task");
   //append listItem to imcompleteTaskHolder
-
+  incompleteTaskHolder.appendChild(listItem);
 }
 //Edit existing tasks
 
