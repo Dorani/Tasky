@@ -48,6 +48,7 @@ var addTask = function(){
   //append listItem to imcompleteTaskHolder
   incompleteTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskCompleted);
+  taskInput.value = " ";
 }
 //Edit existing tasks
 
