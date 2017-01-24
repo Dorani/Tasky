@@ -113,7 +113,13 @@ deleteButton.onclick = deleteTask;
 //bind taskCompleted to the checkbox
 checkBox.onchange = checkBoxEventHandler;
 }
+var ajaxRequest = function() {
+  console.log("ajax request");
+}
+//set the click handler to the addTask function
 addButton.onclick = addTask;
+addButton.addEventListener("click, addTask");
+addButton.addEventListener("click, ajaxRequest");
 
 //cycle over incompleteTaskHolder ul list items
 for (var i = 0; i < incompleteTasksHolder.children.length; i++){
