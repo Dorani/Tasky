@@ -1,7 +1,7 @@
 var taskInput = document.getElementById("new-task"); //new-task
 var addButton = document.getElementsByTagName("button")[0]; //first-button
-var incompleteTaskHolder = document.getElementById("incomplete-tasks"); //imcomplete-tasks
-var completedTaskHolder = document.getElementById("completed-tasks"); //completed-tasks
+var incompleteTasksHolder = document.getElementById("incomplete-tasks"); //imcomplete-tasks
+var completedTasksHolder = document.getElementById("completed-tasks"); //completed-tasks
 
 //New Task List Item
 var createNewTaskElement = function(taskString){
@@ -32,7 +32,7 @@ var addTask = function(){
   //Create a new list item with the text from new-task:
   var listItem = createNewTaskElement("Some New Task");
   //append listItem to imcompleteTaskHolder
-  incompleteTaskHolder.appendChild(listItem);
+  incompleteTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskCompleted);
 }
 //Edit existing tasks
@@ -60,7 +60,7 @@ var taskCompleted = function(){
   console.log("Task Complete...");
     //append the tast list item to the #completed-tasks
   var listItem = this.parentNode;
-  completedTaskHolder.appendChild(listItem);
+  completedTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskIncomplete);
 
 }
@@ -69,11 +69,11 @@ var taskIncomplete = function(){
   console.log("Task Incomplete...");
   //when the checkbox is unchecked we want to append it to #incomplete-tasks
   var listItem = this.parentNode;
-  incompleteTaskHolder.appendChild(listItem);
+  incompleteTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskCompleted);
 }
 
-var bindTaskEvent = function(taskListItem, checkBoxEventHandler){
+var bindTaskEvents = function(taskListItem, checkBoxEventHandler){
 //Set the click handler to the addTask function
 //select list items its children
 var checkbox = taskListItem.querySelector("input[type=checkbox]");
@@ -86,16 +86,16 @@ deleteButton.onclick = deleteTask;
 //bind taskCompleted to the checkbox
 checkbox.onchange = checkBoxEventHandler;
 }
-addButton.onclick = addTask();
+addButton.onclick = addTask;
 
 //cycle over incompleteTaskHolder ul list items
-for (var i = 0; i < imcompleteTaskHolder.children.length; i++){
+for (var i = 0; i < incompleteTasksHolder.children.length; i++){
   //bind events to list item's children(taskCompleted)
-  bindTaskEvents(incompleteTaskHolder.children[i], taskCompleted);
+  bindTaskEvents(incompleteTasksHolder.children[i], taskCompleted);
 }
 
 //cycle over completedTaskHolder ul list items
-for (var i = 0; i < completedTaskHolder.children.length; i++){
+for (var i = 0; i < completedTasksHolder.children.length; i++){
   //bind events to list item's children(taskCompleted)
-  bindTaskEvents(completedTaskHolder.children[i], taskComplete);
+  bindTaskEvents(completedTasksHolder.children[i], taskComplete);
 }
