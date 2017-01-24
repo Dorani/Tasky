@@ -57,13 +57,17 @@ var deleteTask = function(){
 //Mark a task as completed-tasks
 var taskCompleted = function(){
   console.log("Task Complete...");
-   //when the checkbox is checked
     //append the tast list item to the #completed-tasks
+  var listItem = this.parentNode;
+  completedTaskHolder.appendChild(listItem);
+
 }
 //Mark a task as incomplete-tasks
 var taskIncomplete = function(){
   console.log("Task Incomplete...");
   //when the checkbox is unchecked we want to append it to #incomplete-tasks
+  var listItem = this.parentNode;
+  incompleteTaskHolder.appendChild(listItem);
 }
 
 var bindTaskEvent = function(taskListItem, checkBoxEventHandler){
