@@ -18,6 +18,10 @@ var createNewTaskElement = function(taskString){
   var deleteButton = document.createElement("button");
   //each element needs to be modified
   listItem.appendChild(checkbox);
+  listItem.appendChild(label);
+  listItem.appendChild(editButton);
+  listItem.appendChild(editInput);
+  listItem.appendChild(deleteButton);
   //and appended
   return listItem;
 }
