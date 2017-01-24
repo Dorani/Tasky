@@ -19,8 +19,8 @@ var createNewTaskElement = function(taskString){
   //each element needs to be modified
   listItem.appendChild(checkBox);
   listItem.appendChild(label);
-  listItem.appendChild(editButton);
   listItem.appendChild(editInput);
+  listItem.appendChild(editButton);
   listItem.appendChild(deleteButton);
   //and appended
   return listItem;
@@ -84,7 +84,7 @@ editButton.onclick = editTask;
 //bind deleteTask to delete button
 deleteButton.onclick = deleteTask;
 //bind taskCompleted to the checkbox
-checkbox.onchange = checkBoxEventHandler;
+checkBox.onchange = checkBoxEventHandler;
 }
 addButton.onclick = addTask;
 
