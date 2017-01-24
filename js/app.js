@@ -16,13 +16,27 @@ var createNewTaskElement = function(taskString){
   var editButton = document.createElement("button");
   //button.delete
   var deleteButton = document.createElement("button");
+
   //each element needs to be modified
+
+  checkBox.type = "checkbox";
+  editInput.type = "text";
+
+  editButton.innerText = "Edit";
+  editButton.className = "edit"
+  deleteButton.innerText = "Delete";
+  deleteButton.className = "delete";
+
+  label.innerText = taskString;
+
+
+  //each element needs to be appended
   listItem.appendChild(checkBox);
   listItem.appendChild(label);
   listItem.appendChild(editInput);
   listItem.appendChild(editButton);
   listItem.appendChild(deleteButton);
-  //and appended
+
   return listItem;
 }
 
