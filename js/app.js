@@ -33,6 +33,7 @@ var addTask = function(){
   var listItem = createNewTaskElement("Some New Task");
   //append listItem to imcompleteTaskHolder
   incompleteTaskHolder.appendChild(listItem);
+  bindTaskEvents(listItem, taskCompleted);
 }
 //Edit existing tasks
 
@@ -60,6 +61,7 @@ var taskCompleted = function(){
     //append the tast list item to the #completed-tasks
   var listItem = this.parentNode;
   completedTaskHolder.appendChild(listItem);
+  bindTaskEvents(listItem, taskIncomplete);
 
 }
 //Mark a task as incomplete-tasks
@@ -68,6 +70,7 @@ var taskIncomplete = function(){
   //when the checkbox is unchecked we want to append it to #incomplete-tasks
   var listItem = this.parentNode;
   incompleteTaskHolder.appendChild(listItem);
+  bindTaskEvents(listItem, taskCompleted);
 }
 
 var bindTaskEvent = function(taskListItem, checkBoxEventHandler){
